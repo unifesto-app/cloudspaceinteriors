@@ -1,26 +1,173 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-baize: #1e3d2f;
+  --color-baize-deep: #132a20;
+  --color-baize-lit: #2b5341;
+  --color-moss: #a9c2b0; /* secondary text on baize */
+  --color-ivory: #f3ead7;
+  --color-ivory-dim: #e2d6bc;
+  --color-ink: #17201b;
+  --color-ink-soft: #4a5a50; /* secondary text on ivory */
+  --color-brass: #b8913f;
+  --color-brass-hi: #e3c576;
+  --color-brass-lo: #7c5e25;
+  --font-display: var(--font-gloock), Georgia, serif;
+  --font-sans: var(--font-schibsted), system-ui, sans-serif;
+  --font-hand: var(--font-kalam), cursive;
+  --ease-settle: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* The board: green baize felt. */
+body {
+  color: var(--color-ivory);
+  background-color: var(--color-baize);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .78 0 0 0 0 .88 0 0 0 0 .8 .95 0 0 0 -.42'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 120% 70% at 25% 0%, var(--color-baize-lit), transparent 60%);
+  caret-color: var(--color-brass);
+  overflow-x: clip;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+::selection {
+  background: var(--color-brass-hi);
+  color: var(--color-ink);
+}
+
+html {
+  scrollbar-color: var(--color-brass) var(--color-baize-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass-hi);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Ivory card-stock tag pinned to the board. */
+@utility tag {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  border-radius: 3px;
+  box-shadow: 0 14px 28px -12px rgb(0 0 0 / 0.55), 0 2px 4px rgb(0 0 0 / 0.25);
+}
+
+/* Engraved brass plate: actions and promises only. */
+@utility plate {
+  color: #1b2a20;
+  background: linear-gradient(160deg, #eed591 0%, #d0aa58 35%, #b38d3e 65%, #dcbd6b 100%);
+  box-shadow: 0 8px 18px -8px rgb(0 0 0 / 0.65);
+  text-shadow: 0 1px 0 rgb(255 255 255 / 0.22);
+  border-radius: 3px;
+}
+
+@utility btn-plate {
+  @apply plate inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold tracking-wide transition-[filter,translate] duration-200 hover:brightness-110 active:translate-y-px disabled:opacity-60 disabled:hover:brightness-100;
+}
+
+@utility btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-[3px] border border-ivory/40 px-6 py-3.5 text-sm font-semibold text-ivory transition-colors hover:border-brass-hi hover:text-brass-hi;
+}
+
+/* Brass push-pin. */
+@utility pin {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 30%, #fff4c8, #e3c576 30%, #9c7a32 70%, #5a4316);
+  box-shadow: 2px 4px 5px rgb(0 0 0 / 0.5);
+  z-index: 2;
+}
+
+/* A photographic print pinned to the board, with an ivory border. */
+@utility print {
+  background: var(--color-ivory);
+  padding: 7px;
+  box-shadow: 0 22px 40px -18px rgb(0 0 0 / 0.7), 0 3px 6px rgb(0 0 0 / 0.3);
+}
+
+@utility field {
+  @apply w-full rounded-[3px] border border-ink/15 bg-white/85 px-3.5 py-3 text-sm text-ink placeholder:text-ink-soft/80 outline-none transition-shadow focus:border-brass-lo focus:ring-2 focus:ring-brass/30;
+}
+
+/* Material swatches — real finishes cropped from Cloud Space project photos (public/swatches). */
+@utility sw-marble {
+  background: url("/swatches/marble.webp") center / cover;
+}
+@utility sw-grey-marble {
+  background: url("/swatches/grey-marble.webp") center / cover;
+}
+@utility sw-walnut {
+  background: url("/swatches/walnut.webp") center / cover;
+}
+@utility sw-slats {
+  background: url("/swatches/walnut-slats.webp") center / cover;
+}
+@utility sw-linen {
+  background:
+    repeating-linear-gradient(0deg, rgb(0 0 0 / 0.06) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgb(0 0 0 / 0.05) 0 1px, transparent 1px 3px),
+    #cdbfa5;
+}
+@utility sw-brass {
+  background: linear-gradient(160deg, #ecd28a, #c9a24f 40%, #9c7a32 70%, #d9b965);
+}
+
+/* Signature: a chosen piece rises off the board and glows brass. */
+@utility chosen {
+  translate: 0 -6px;
+  box-shadow: 0 0 0 2px var(--color-brass-hi), 0 24px 44px -14px rgb(227 197 118 / 0.45);
+}
+
+/* ── Motion ─────────────────────────────────────────────────────────
+   Focal moment: the hero print is pinned to the board on load — it drops,
+   settles to its tilt, the pins press in, the caption tag swings onto its pin.
+   Keyframes omit their end state so each element lands on its own rotate/translate. */
+@keyframes print-drop {
+  from {
+    translate: 0 -22px;
+    scale: 1.035;
+    rotate: 0deg;
+    box-shadow: 0 60px 80px -24px rgb(0 0 0 / 0.55), 0 3px 6px rgb(0 0 0 / 0.2);
   }
 }
+@keyframes pin-press {
+  0% { scale: 1.9; box-shadow: 8px 14px 12px rgb(0 0 0 / 0.35); }
+  70% { scale: 0.88; }
+}
+@keyframes tag-swing {
+  from { rotate: 11deg; translate: 0 -6px; }
+  60% { rotate: -1deg; }
+}
+@keyframes plate-tap {
+  0% { filter: brightness(1.45); scale: 1.18; }
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility anim-print {
+  animation: print-drop 820ms var(--ease-settle) both;
+}
+@utility anim-pin {
+  animation: pin-press 420ms var(--ease-settle) 640ms both;
+}
+@utility anim-swing {
+  transform-origin: 12% 0%;
+  animation: tag-swing 900ms var(--ease-settle) 760ms both;
+}
+@utility anim-tap {
+  animation: plate-tap 520ms var(--ease-settle);
+}
+
+/* Reduced motion: no spatial movement; state feedback stays as a brightness flash. */
+@media (prefers-reduced-motion: reduce) {
+  .anim-print, .anim-pin, .anim-swing { animation: none; }
+  .chosen { translate: none; }
+  @keyframes plate-tap {
+    0% { filter: brightness(1.45); }
+  }
+  html { scroll-behavior: auto; }
 }

@@ -1,0 +1,457 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T14:16:14.800381+00:00",
+  "title": "Design System: Cloud Space Interiors",
+  "extensions": {
+    "colorMeta": {
+      "baize": {
+        "role": "primary",
+        "displayName": "Baize",
+        "canonical": "oklch(33.1% 0.045 163)",
+        "tonalRamp": [
+          "#001106",
+          "#0b2b1e",
+          "#284739",
+          "#466656",
+          "#658676",
+          "#86a896",
+          "#abcebc",
+          "#d4f9e6"
+        ]
+      },
+      "baize-deep": {
+        "role": "primary",
+        "displayName": "Deep Baize",
+        "canonical": "oklch(26.2% 0.035 164)",
+        "tonalRamp": [
+          "#001007",
+          "#12291f",
+          "#2e463b",
+          "#4c6458",
+          "#6b8478",
+          "#8ba699",
+          "#b0ccbe",
+          "#daf6e8"
+        ]
+      },
+      "baize-lit": {
+        "role": "primary",
+        "displayName": "Lit Baize",
+        "canonical": "oklch(40.7% 0.055 163)",
+        "tonalRamp": [
+          "#001205",
+          "#012c1c",
+          "#214937",
+          "#3f6855",
+          "#5f8874",
+          "#7faa95",
+          "#a4d0ba",
+          "#cefbe4"
+        ]
+      },
+      "brass": {
+        "role": "secondary",
+        "displayName": "Brass",
+        "canonical": "oklch(67.7% 0.110 83)",
+        "tonalRamp": [
+          "#1f0100",
+          "#3c1a00",
+          "#5b3800",
+          "#7b5600",
+          "#9c761f",
+          "#bf9846",
+          "#e6be6d",
+          "#ffe897"
+        ]
+      },
+      "brass-hi": {
+        "role": "secondary",
+        "displayName": "Polished Brass",
+        "canonical": "oklch(83.2% 0.104 89)",
+        "tonalRamp": [
+          "#1c0400",
+          "#381e00",
+          "#563b00",
+          "#755900",
+          "#967a27",
+          "#b89b4c",
+          "#dfc172",
+          "#ffec9c"
+        ]
+      },
+      "brass-lo": {
+        "role": "secondary",
+        "displayName": "Aged Brass",
+        "canonical": "oklch(50.1% 0.083 81)",
+        "tonalRamp": [
+          "#1c0400",
+          "#381d00",
+          "#563a00",
+          "#76581e",
+          "#977840",
+          "#b99961",
+          "#e0bf86",
+          "#ffe9af"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory Card-Stock",
+        "canonical": "oklch(93.9% 0.027 86)",
+        "tonalRamp": [
+          "#100a01",
+          "#2a2315",
+          "#463f2f",
+          "#645d4c",
+          "#847c6b",
+          "#a69e8c",
+          "#ccc3b1",
+          "#f7eedb"
+        ]
+      },
+      "ivory-dim": {
+        "role": "neutral",
+        "displayName": "Dim Ivory",
+        "canonical": "oklch(87.9% 0.037 86)",
+        "tonalRamp": [
+          "#120a00",
+          "#2c230d",
+          "#483f29",
+          "#675c46",
+          "#877c64",
+          "#a99d85",
+          "#cfc3a9",
+          "#faedd3"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(23.3% 0.016 161)",
+        "tonalRamp": [
+          "#060d09",
+          "#1d2721",
+          "#39423d",
+          "#56615b",
+          "#75807a",
+          "#96a29b",
+          "#bcc7c1",
+          "#e6f2eb"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(45.1% 0.026 158)",
+        "tonalRamp": [
+          "#030e07",
+          "#19281f",
+          "#35443b",
+          "#526258",
+          "#718277",
+          "#92a498",
+          "#b7c9be",
+          "#e1f4e8"
+        ]
+      },
+      "moss": {
+        "role": "neutral",
+        "displayName": "Moss",
+        "canonical": "oklch(79.0% 0.037 154)",
+        "tonalRamp": [
+          "#000f05",
+          "#15291c",
+          "#304637",
+          "#4e6454",
+          "#6d8473",
+          "#8da694",
+          "#b2ccb9",
+          "#dcf6e3"
+        ]
+      },
+      "plate-ink": {
+        "role": "neutral",
+        "displayName": "Plate Ink",
+        "canonical": "oklch(26.8% 0.028 155)",
+        "tonalRamp": [
+          "#030f06",
+          "#19281e",
+          "#344439",
+          "#526257",
+          "#718276",
+          "#92a497",
+          "#b7cabc",
+          "#e1f4e7"
+        ]
+      },
+      "error-rust": {
+        "role": "neutral",
+        "displayName": "Rust",
+        "canonical": "oklch(46.3% 0.149 30)",
+        "tonalRamp": [
+          "#340000",
+          "#580000",
+          "#7c0400",
+          "#a13224",
+          "#c65444",
+          "#ec7764",
+          "#ff9d89",
+          "#ffd0be"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Inner-page H1s on baize."
+      },
+      "display-hero-tag": {
+        "displayName": "Hero Tag Display",
+        "purpose": "Home H1 on the hero ivory tag."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s on baize."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Tag, product, project and plate headings; testimonial quotes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Ledes in Moss on baize."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Descriptions and spec sheets on tags."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and plates; form labels at 12px in Soft Ink. Sentence case."
+      },
+      "hand": {
+        "displayName": "Hand",
+        "purpose": "The hero print caption tag only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tag",
+        "value": "0 14px 28px -12px rgb(0 0 0 / 0.55), 0 2px 4px rgb(0 0 0 / 0.25)",
+        "purpose": "Ivory card-stock lifted off the felt."
+      },
+      {
+        "name": "print",
+        "value": "0 22px 40px -18px rgb(0 0 0 / 0.7), 0 3px 6px rgb(0 0 0 / 0.3)",
+        "purpose": "Mounted photographic print."
+      },
+      {
+        "name": "plate",
+        "value": "0 8px 18px -8px rgb(0 0 0 / 0.65)",
+        "purpose": "Thin brass plate and plate buttons."
+      },
+      {
+        "name": "chip",
+        "value": "0 8px 14px -6px rgb(0 0 0 / 0.6)",
+        "purpose": "Material samples in the tray."
+      },
+      {
+        "name": "pin",
+        "value": "2px 4px 5px rgb(0 0 0 / 0.5)",
+        "purpose": "Cast shadow of a domed brass pin."
+      },
+      {
+        "name": "chosen",
+        "value": "0 0 0 2px #e3c576, 0 24px 44px -14px rgb(227 197 118 / 0.45)",
+        "purpose": "A chosen product raised 6px with a brass glow."
+      },
+      {
+        "name": "focus",
+        "value": "outline: 2px solid #e3c576; outline-offset: 3px",
+        "purpose": "Global focus-visible ring."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All settling, lifting and tilt-straightening motion."
+      },
+      {
+        "name": "print-drop",
+        "value": "820ms ease-settle",
+        "purpose": "Hero print drops from -22px at 1.035 scale and settles to its tilt."
+      },
+      {
+        "name": "pin-press",
+        "value": "420ms ease-settle, 640ms delay",
+        "purpose": "Hero pins press in from 1.9x scale."
+      },
+      {
+        "name": "tag-swing",
+        "value": "900ms ease-settle, 760ms delay",
+        "purpose": "Hero caption tag swings from 11deg onto its pin."
+      },
+      {
+        "name": "plate-tap",
+        "value": "520ms ease-settle",
+        "purpose": "Quote count badge flashes brighter and scales; under reduced motion brightness only."
+      },
+      {
+        "name": "quote-flight",
+        "value": "640ms cubic-bezier(0.55, 0, 0.35, 1)",
+        "purpose": "72px product thumbnail arcs into the header quote plate; skipped under reduced motion."
+      },
+      {
+        "name": "lift",
+        "value": "300-500ms ease-settle",
+        "purpose": "Hover lift of chips (-4px) and doors (-4px); chosen rise (-6px); tilt to 0deg on hover."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Brass Plate Button",
+      "kind": "button",
+      "refersTo": "button-plate",
+      "description": "Every primary action: get a quote, add to quote, submit.",
+      "html": "<div class=\"ds-board\"><button class=\"ds-btn-plate\">Get a quote</button></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-btn-plate{color:#1b2a20;background:linear-gradient(160deg,#eed591 0%,#d0aa58 35%,#b38d3e 65%,#dcbd6b 100%);box-shadow:0 8px 18px -8px rgb(0 0 0/.65);text-shadow:0 1px 0 rgb(255 255 255/.22);border-radius:3px;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;font:600 14px/20px 'Schibsted Grotesk',system-ui,sans-serif;letter-spacing:.025em;border:0;cursor:pointer;transition:filter .2s,translate .2s}.ds-btn-plate:hover{filter:brightness(1.1)}.ds-btn-plate:active{translate:0 1px}.ds-btn-plate:focus-visible{outline:2px solid #e3c576;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary navigation on baize.",
+      "html": "<div class=\"ds-board\"><a href=\"#\" class=\"ds-btn-ghost\">See all work</a></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-btn-ghost{display:inline-flex;padding:14px 24px;border:1px solid rgb(243 234 215/.4);border-radius:3px;color:#f3ead7;font:600 14px/20px 'Schibsted Grotesk',system-ui,sans-serif;text-decoration:none;transition:color .15s,border-color .15s}.ds-btn-ghost:hover{border-color:#e3c576;color:#e3c576}.ds-btn-ghost:focus-visible{outline:2px solid #e3c576;outline-offset:3px}"
+    },
+    {
+      "name": "Pinned Tag",
+      "kind": "card",
+      "refersTo": "tag",
+      "description": "Ivory card-stock that carries all reading text, pinned and slightly tilted.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-tag\"><span class=\"ds-pin\"></span><h3>For homes</h3><p>Modular kitchens to luxurious bedrooms.</p></div></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-pin{position:absolute;top:-6px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:9999px;background:radial-gradient(circle at 35% 30%,#fff4c8,#e3c576 30%,#9c7a32 70%,#5a4316);box-shadow:2px 4px 5px rgb(0 0 0/.5)}.ds-tag{background:var(--color-ivory,#f3ead7);color:var(--color-ink,#17201b);border-radius:3px;box-shadow:0 14px 28px -12px rgb(0 0 0/.55),0 2px 4px rgb(0 0 0/.25);position:relative;padding:28px;max-width:320px;rotate:.6deg;transition:rotate .5s cubic-bezier(.16,1,.3,1)}.ds-tag:hover{rotate:0deg}.ds-tag h3{font:400 30px/1.2 Gloock,Georgia,serif;margin:0}.ds-tag p{margin:12px 0 0;font-size:14px;line-height:1.625;color:#4a5a50}"
+    },
+    {
+      "name": "Project Pin",
+      "kind": "custom",
+      "refersTo": "print",
+      "description": "A bordered print with an overlapping spec tag beneath.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-print\"><span class=\"ds-pin\"></span><div class=\"ds-photo\"></div></div><div class=\"ds-spec\"><h3>Corporate office</h3><dl><dt>Where</dt><dd>Financial District</dd><dt>Handover</dt><dd><b>45 days</b></dd></dl></div></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-pin{position:absolute;top:-6px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:9999px;background:radial-gradient(circle at 35% 30%,#fff4c8,#e3c576 30%,#9c7a32 70%,#5a4316);box-shadow:2px 4px 5px rgb(0 0 0/.5)}.ds-print{position:relative;background:#f3ead7;padding:7px;rotate:-.8deg;box-shadow:0 22px 40px -18px rgb(0 0 0/.7),0 3px 6px rgb(0 0 0/.3);max-width:360px}.ds-photo{aspect-ratio:16/10;background:linear-gradient(135deg,#8a7a63,#cdbfa5)}.ds-spec{background:var(--color-ivory,#f3ead7);color:var(--color-ink,#17201b);border-radius:3px;box-shadow:0 14px 28px -12px rgb(0 0 0/.55),0 2px 4px rgb(0 0 0/.25);position:relative;margin:-24px 40px 0 24px;padding:16px 20px;font-size:14px;max-width:300px}.ds-spec h3{font:400 24px/1.2 Gloock,Georgia,serif;margin:0}.ds-spec dl{display:grid;grid-template-columns:auto 1fr;gap:4px 24px;margin:8px 0 0}.ds-spec dt{color:#4a5a50}.ds-spec dd{margin:0;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Promise Plate",
+      "kind": "custom",
+      "refersTo": "button-plate",
+      "description": "An engraved brass plate carrying one promise; not interactive.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-promise\"><p class=\"t\">Fixed price</p><p>The quotation you approve is the final bill.</p></div></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-promise{color:#1b2a20;background:linear-gradient(160deg,#eed591 0%,#d0aa58 35%,#b38d3e 65%,#dcbd6b 100%);box-shadow:0 8px 18px -8px rgb(0 0 0/.65);text-shadow:0 1px 0 rgb(255 255 255/.22);border-radius:3px;padding:12px 20px;max-width:280px}.ds-promise p{margin:6px 0 0;font-size:14px;line-height:1.35}.ds-promise .t{margin:0;font:400 20px/1 Gloock,Georgia,serif}"
+    },
+    {
+      "name": "Material Chip",
+      "kind": "chip",
+      "refersTo": "swatch-chip",
+      "description": "A real finish sample linking to a product category.",
+      "html": "<div class=\"ds-board\"><a href=\"#\" class=\"ds-chip\"><span class=\"ds-sw\"></span>Homes</a></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-chip{display:inline-flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:#a9c2b0;text-decoration:none}.ds-chip:hover{color:#e3c576}.ds-sw{width:64px;height:48px;border-radius:2px;background:linear-gradient(160deg,#ecd28a,#c9a24f 40%,#9c7a32 70%,#d9b965);box-shadow:0 8px 14px -6px rgb(0 0 0/.6),0 0 0 1px rgb(0 0 0/.2);transition:translate .3s cubic-bezier(.16,1,.3,1)}.ds-chip:hover .ds-sw{translate:0 -4px}.ds-chip:focus-visible{outline:2px solid #e3c576;outline-offset:3px}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Text input set inside an ivory tag.",
+      "html": "<div class=\"ds-tagbg\"><label class=\"ds-lbl\">Your name<input class=\"ds-field\" placeholder=\"Name\"></label></div>",
+      "css": ".ds-tagbg{background:#f3ead7;padding:24px;border-radius:3px}.ds-lbl{display:grid;gap:4px;font:600 12px 'Schibsted Grotesk',system-ui,sans-serif;color:#4a5a50}.ds-field{width:100%;padding:12px 14px;border:1px solid rgb(23 32 27/.15);border-radius:3px;background:rgb(255 255 255/.85);color:#17201b;font:400 14px 'Schibsted Grotesk',system-ui,sans-serif;outline:none;transition:box-shadow .15s}.ds-field:focus{border-color:#7c5e25;box-shadow:0 0 0 2px rgb(184 145 63/.3)}"
+    },
+    {
+      "name": "Chosen Product",
+      "kind": "card",
+      "refersTo": "tag",
+      "description": "A product added to the quote rises and glows brass.",
+      "html": "<div class=\"ds-board\"><article class=\"ds-card ds-chosen\"><div class=\"ds-img\"></div><div class=\"ds-body\"><h3>Marble-Finish TV Unit</h3><p>From ₹65,000</p></div><div class=\"ds-foot\">On your quote</div></article></div>",
+      "css": ":host{--color-baize:#1e3d2f;--color-baize-deep:#132a20;--color-ivory:#f3ead7;--color-ink:#17201b;--color-ink-soft:#4a5a50;--color-moss:#a9c2b0;--color-brass:#b8913f;--color-brass-hi:#e3c576;--color-brass-lo:#7c5e25;--ease-settle:cubic-bezier(0.16,1,0.3,1)}.ds-board{background:#1e3d2f;padding:32px;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#f3ead7}.ds-card{background:var(--color-ivory,#f3ead7);color:var(--color-ink,#17201b);border-radius:3px;box-shadow:0 14px 28px -12px rgb(0 0 0/.55),0 2px 4px rgb(0 0 0/.25);overflow:hidden;max-width:260px;transition:translate .5s cubic-bezier(.16,1,.3,1),box-shadow .5s cubic-bezier(.16,1,.3,1)}.ds-chosen{translate:0 -6px;box-shadow:0 0 0 2px #e3c576,0 24px 44px -14px rgb(227 197 118/.45)}.ds-img{aspect-ratio:4/3;background:#e2d6bc}.ds-body{padding:20px}.ds-body h3{margin:0;font:400 26px/1.2 Gloock,Georgia,serif}.ds-body p{margin:8px 0 0;font-weight:600;font-size:14px;color:#1e3d2f}.ds-foot{border-top:1px solid rgb(23 32 27/.1);padding:16px 20px;font-weight:600;font-size:14px;color:#7c5e25}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Sticky deep-baize bar with pinned logo tag, brass-on-hover links and quote plate.",
+      "html": "<header class=\"ds-hdr\"><span class=\"ds-logo\">Cloud Space</span><nav><a href=\"#\" aria-current=\"page\">Work</a><a href=\"#\">Services</a><a href=\"#\">Products</a></nav><a href=\"#\" class=\"ds-q\">Get a quote <span>2</span></a></header>",
+      "css": ".ds-hdr{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;background:rgb(19 42 32/.85);border-bottom:1px solid rgb(243 234 215/.1);font-family:'Schibsted Grotesk',system-ui,sans-serif}.ds-logo{background:var(--color-ivory,#f3ead7);color:var(--color-ink,#17201b);border-radius:3px;box-shadow:0 14px 28px -12px rgb(0 0 0/.55),0 2px 4px rgb(0 0 0/.25);padding:6px 12px;rotate:-1deg;font:400 16px Gloock,Georgia,serif}.ds-hdr nav{display:flex;gap:36px}.ds-hdr nav a{color:rgb(243 234 215/.85);font-size:15px;text-decoration:none;text-underline-offset:6px}.ds-hdr nav a:hover,.ds-hdr nav a[aria-current]{color:#e3c576}.ds-hdr nav a[aria-current]{text-decoration:underline 2px #b8913f}.ds-q{color:#1b2a20;background:linear-gradient(160deg,#eed591 0%,#d0aa58 35%,#b38d3e 65%,#dcbd6b 100%);box-shadow:0 8px 18px -8px rgb(0 0 0/.65);text-shadow:0 1px 0 rgb(255 255 255/.22);border-radius:3px;display:inline-flex;gap:8px;align-items:center;padding:12px 20px;font-weight:600;font-size:14px;text-decoration:none}.ds-q span{min-width:24px;padding:2px 6px;border-radius:9999px;background:#132a20;color:#e3c576;font-size:11px;text-align:center;text-shadow:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sample Board",
+    "overview": "The site is the finishes board a designer lays on the table at the first meeting. Deep green baize felt is the ground of every page. On it sit ivory card-stock tags that carry words, framed prints of the studio's own finished rooms, and real material chips cropped from those photographs. Brass is the hardware: pins, engraved promise plates, and every action.\n\nComposition is pinned, not gridded-flat: objects sit slightly off-axis, overlap, and step down the board at staggered heights. The deep green and gold of the brand are load-bearing; the board is warm and tactile, never cold.\n\nMotion follows the physics of the board: the hero print drops, pins press, the caption tag swings; a chosen product lifts with a brass glow while its thumbnail flies into the quote plate.",
+    "keyCharacteristics": [
+      "Felt-textured green baize ground with a top-left light pool",
+      "Ivory tags for all reading text",
+      "Brass reserved for pins, promise plates, actions and the chosen state",
+      "Real material chips as category controls",
+      "Small tilts, overlaps and staggered heights on one 12-column board"
+    ],
+    "rules": [
+      {
+        "name": "The Hardware Rule",
+        "body": "Brass appears only as pins, plates that carry a promise or action, and the ring of a chosen piece.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Text-Colours Rule",
+        "body": "Ink on Ivory for body; on baize, Ivory headings and Moss supporting lines.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Days, phone numbers, quantities, request and step numbers use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Pen Rule",
+        "body": "The hand face writes one caption on the focal print only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Board Rule",
+        "body": "Never three equal cards on one baseline; vary span or vertical offset.",
+        "section": "layout"
+      },
+      {
+        "name": "The Felt Rule",
+        "body": "Shadows fall downward and blur into the felt; elevation changes by lifting, never by borders.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep baize as the ground of every public page and put reading text on ivory tags.",
+      "Do use real material crops from the studio's own photographs for chips, with provenance recorded.",
+      "Do make every primary action a Brass Plate and every promise an engraved plate.",
+      "Do tilt and stagger board objects at md/lg and straighten them on hover.",
+      "Do honour reduced motion by removing spatial movement while keeping state feedback."
+    ],
+    "donts": [
+      "Don't fill brass flat or use it as a decorative heading colour, border or band.",
+      "Don't introduce white or grey page surfaces; the only white is the translucent field well inside a tag.",
+      "Don't use stock or generated imagery for rooms or materials.",
+      "Don't set body copy directly on baize beyond short Moss ledes and captions.",
+      "Don't use the hand face anywhere but a single caption tag."
+    ]
+  }
+}
