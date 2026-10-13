@@ -25,11 +25,7 @@ export default function ProductForm({ p }: { p?: Product }) {
           Description
           <textarea name="description" rows={3} maxLength={2000} defaultValue={p?.description} className="field" />
         </label>
-        <label className="grid gap-1.5 text-sm">
-          Price label
-          <input name="price" maxLength={60} placeholder="From ₹65,000 / On request" defaultValue={p?.price} className="field" />
-        </label>
-        <label className="grid gap-1.5 text-sm">
+        <label className="grid gap-1.5 text-sm sm:col-span-2">
           Upload image (JPG/PNG/WebP, max 5 MB)
           <input name="imageFile" type="file" accept="image/jpeg,image/png,image/webp,image/avif" className="field py-2" />
         </label>

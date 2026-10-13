@@ -18,13 +18,10 @@
   --ease-settle: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* The board: green baize felt. */
+/* The board: clean deep green, no texture (the studio found the felt grain blurry). */
 body {
   color: var(--color-ivory);
   background-color: var(--color-baize);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .78 0 0 0 0 .88 0 0 0 0 .8 .95 0 0 0 -.42'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse 120% 70% at 25% 0%, var(--color-baize-lit), transparent 60%);
   caret-color: var(--color-brass);
   overflow-x: clip;
 }

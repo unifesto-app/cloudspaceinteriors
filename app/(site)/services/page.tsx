@@ -37,7 +37,7 @@ function Group({ id, title, items, flip }: { id: string; title: string; items: S
           const right = flip ? i % 2 === 0 : i % 2 === 1;
           return (
             <article key={s.id} id={s.id} className="grid scroll-mt-8 items-center gap-8 md:grid-cols-12">
-              <div className={`print relative md:col-span-7 ${right ? "md:order-2 rotate-[0.7deg]" : "-rotate-[0.7deg]"}`}>
+              <div className={`print relative md:col-span-7 ${right ? "md:order-2" : ""}`}>
                 <span className="pin -top-1.5 left-1/2 -translate-x-1/2" aria-hidden />
                 <img src={s.image} alt="" loading="lazy" className="aspect-[16/10] w-full object-cover" />
               </div>

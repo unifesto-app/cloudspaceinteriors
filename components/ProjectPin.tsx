@@ -3,10 +3,10 @@ import Link from "next/link";
 import type { Project } from "@/lib/site";
 
 // A pinned print with its spec tag (location, style, scope, handover) clipped underneath.
-export default function ProjectPin({ p, className = "", tilt, large }: { p: Project; className?: string; tilt: string; large?: boolean }) {
+export default function ProjectPin({ p, className = "", large }: { p: Project; className?: string; large?: boolean }) {
   return (
     <Link href={`/work/${p.slug}`} className={`group block ${className}`}>
-      <div className={`print relative ${tilt} transition-transform duration-500 ease-settle group-hover:rotate-0`}>
+      <div className="print relative">
         <span className="pin -top-1.5 left-1/2 -translate-x-1/2" aria-hidden />
         <img src={p.images[0]} alt={`${p.title}, ${p.location}`} loading="lazy" className={`w-full object-cover ${large ? "aspect-[4/3]" : "aspect-[16/10]"}`} />
       </div>
@@ -17,7 +17,6 @@ export default function ProjectPin({ p, className = "", tilt, large }: { p: Proj
         <dt className="text-ink-soft">Where</dt><dd>{p.location}, Hyderabad</dd>
         <dt className="text-ink-soft">Style</dt><dd>{p.style}</dd>
         <dt className="text-ink-soft">Scope</dt><dd>{p.scope}</dd>
-        {p.delivered && (<><dt className="text-ink-soft">Handover</dt><dd className="font-semibold tabular-nums">{p.delivered}</dd></>)}
         </dl>
       </div>
     </Link>

@@ -16,7 +16,7 @@ async function ProductList() {
           <div className="flex-1">
             <p className="font-medium">{p.name}</p>
             <p className="text-xs text-ink-soft">
-              {p.category} · {p.price || "no price"} {p.featured ? "· ★ featured" : ""} {p.active ? "" : "· hidden"}
+              {p.category} {p.featured ? "· ★ featured" : ""} {p.active ? "" : "· hidden"}
             </p>
           </div>
           <Link href={`/admin/products/${p.id}`} className="text-sm text-brass-lo underline">Edit</Link>

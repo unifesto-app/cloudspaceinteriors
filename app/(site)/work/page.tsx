@@ -6,10 +6,10 @@ import { projects } from "@/lib/site";
 export const metadata: Metadata = { title: "Work", description: "Homes, villas, offices and hotels finished by Cloud Space Interiors across Hyderabad." };
 
 const layout = [
-  ["lg:col-span-7", "-rotate-[0.8deg]", true],
-  ["lg:col-span-5 lg:mt-32", "rotate-[1deg]", false],
-  ["lg:col-span-5 lg:col-start-2", "rotate-[0.6deg]", false],
-  ["lg:col-span-6 lg:mt-20", "-rotate-[0.9deg]", true],
+  ["lg:col-span-7", true],
+  ["lg:col-span-5 lg:mt-32", false],
+  ["lg:col-span-5 lg:col-start-2", false],
+  ["lg:col-span-6 lg:mt-20", true],
 ] as const;
 
 export default function WorkPage() {
@@ -20,8 +20,8 @@ export default function WorkPage() {
 
       <div className="mt-16 grid gap-x-12 gap-y-20 lg:grid-cols-12">
         {projects.map((p, i) => {
-          const [col, tilt, large] = layout[i % layout.length];
-          return <ProjectPin key={p.slug} p={p} className={col} tilt={tilt} large={large} />;
+          const [col, large] = layout[i % layout.length];
+          return <ProjectPin key={p.slug} p={p} className={col} large={large} />;
         })}
       </div>
 

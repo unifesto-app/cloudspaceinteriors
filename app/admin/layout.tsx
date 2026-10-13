@@ -12,6 +12,7 @@ export default function AdminLayout({ children }: LayoutProps<"/admin">) {
           <span className="font-display text-xl font-semibold">Cloud Space · Admin</span>
           <Link href="/admin" className="hover:text-brass-lo">Quote requests</Link>
           <Link href="/admin/products" className="hover:text-brass-lo">Products</Link>
+          <Link href="/admin/gallery" className="hover:text-brass-lo">Gallery</Link>
           <Link href="/" className="ml-auto text-ink-soft hover:text-brass-lo">View site ↗</Link>
           <form action={logout}><button className="text-ink-soft hover:text-red-700">Log out</button></form>
         </div>

@@ -8,8 +8,8 @@ const schibsted = Schibsted_Grotesk({ variable: "--font-schibsted", subsets: ["l
 const kalam = Kalam({ variable: "--font-kalam", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: { default: "Cloud Space Interiors — premium interiors, fixed price, on time", template: "%s · Cloud Space Interiors" },
-  description: "End-to-end interiors for homes and businesses in Hyderabad. Premium finishes, a quotation that is the final price, and a handover date we keep.",
+  title: { default: "Cloud Space Interiors — designs that speak, spaces that transform", template: "%s · Cloud Space Interiors" },
+  description: "End-to-end interiors for homes and businesses in Hyderabad. Kitchens, wardrobes, TV units, ceilings and complete interiors with premium finishes, designed and built by one team.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

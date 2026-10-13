@@ -119,14 +119,14 @@ components:
 
 **Creative North Star: "The Sample Board"**
 
-The site is the finishes board a designer lays on the table at the first meeting. Deep green baize felt is the ground of every page and holds well over half of each viewport. On it sit three kinds of object, and only three: ivory card-stock tags that carry words, framed photographic prints of the studio's own finished rooms, and real material chips (marble, grey marble, walnut, walnut slats, linen, brass) cropped from those same photographs. Brass is the hardware: the pins that hold things down, the engraved plates that carry promises, and every action a visitor can take.
+The site is the finishes board a designer lays on the table at the first meeting. Clean deep green baize is the ground of every page and holds well over half of each viewport. On it sit three kinds of object, and only three: ivory card-stock tags that carry words, framed photographic prints of the studio's own finished rooms, and real material chips (marble, grey marble, walnut, walnut slats, linen, brass) cropped from those same photographs. Brass is the hardware: the pins that hold things down, the engraved plates that carry promises, and every action a visitor can take.
 
 Composition is pinned, not gridded-flat. Objects sit slightly off-axis (half a degree to a degree and a half), overlap their neighbours (a spec tag tucks under its print), and step down the board at staggered heights rather than lining up in equal rows. The board is warm and tactile, never cold or stark; the deep green and gold of the existing brand are its two load-bearing colours (binding brand commitment).
 
 Motion follows the physics of the board. On arrival the hero print drops and settles, its pins press in, and its handwritten caption tag swings onto its pin. Choosing a product lifts it off the board with a brass glow while a thumbnail flies into the header's quote plate. Nothing else animates for its own sake.
 
 **Key Characteristics:**
-- Felt-textured green baize ground with a soft top-left light pool.
+- Flat, sharp green baize ground — no noise texture or light pool (removed at the studio's request: it read as blurry).
 - Ivory tags for all reading text; ink on ivory, never body copy straight on baize beyond short moss-coloured supporting lines.
 - Brass reserved for pins, promise plates, actions and the chosen state.
 - Real material chips act as category controls and category markers.
@@ -137,8 +137,8 @@ Motion follows the physics of the board. On arrival the hero print drops and set
 One green ramp does the tonal work; ivory carries text; brass marks what is held, promised or chosen.
 
 ### Primary
-- **Baize** (`baize`): the felt board itself, the page background on every public surface, beneath a fine noise texture and a radial light pool of Lit Baize.
-- **Deep Baize** (`baize-deep`): the sticky header (85% with backdrop blur), the "two doors" band (50%), the footer, and the scrollbar track. Use it to sink a band, not to start a new colour.
+- **Baize** (`baize`): the felt board itself, the flat page background on every public surface.
+- **Deep Baize** (`baize-deep`): the About band (60%), the "two doors" band (50%), the footer, and the scrollbar track. Use it to sink a band, not to start a new colour.
 - **Lit Baize** (`baize-lit`): only the light pool at the top-left of the board.
 
 ### Secondary
@@ -236,7 +236,7 @@ Real material swatches cropped from the studio's own project photos (marble, gre
 - **Error:** Rust text below the form, announced as an alert.
 
 ### Navigation
-Sticky Deep Baize header (85%, blurred) with a hairline Ivory rule at 10%. The logo is printed on a small pinned ivory tag, tilted −1°, straightening on hover. Links are Ivory at 85%, 15px; hover and active turn Polished Brass, active adds a 2px brass underline offset 6px. The "Get a quote" Brass Plate carries the quote-list count in a Deep Baize pill. Below `md`, links drop into a full-width Deep Baize panel.
+Sticky Ivory header with a 2px Brass bottom rule, like the old site's white header: the logo sits directly on it (h-16, no tag, no tilt) so it blends in. Links are Ink at 75%, the active link Ink semibold with a 2px Brass underline; the Get a quote plate sits at the right. The mobile menu drops down as an Ivory panel.
 
 ### Chosen Piece (signature)
 When a product is added, its card rises 6px and gains the Chosen ring and glow; its image flies as a 72px thumbnail along an arc into the header plate (640ms), and the count badge flashes brighter (520ms). Under reduced motion the rise and flight are removed and only the brightness flash remains. All settling motion uses the Settle easing.

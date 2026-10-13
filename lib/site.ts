@@ -45,7 +45,6 @@ export type Project = {
   style: string;
   scope: string;
   highlight: string;
-  delivered?: string;
   images: string[];
 };
 
@@ -53,7 +52,7 @@ export type Project = {
 export const projects: Project[] = [
   { slug: "banjara-hills-3bhk", title: "Elegant 3BHK apartment", location: "Banjara Hills", style: "Modern luxe", scope: "Full residential interiors", highlight: "Marble-textured TV unit with gold accents and ambient lighting.", images: [img.marbleTv, img.marbleLiving, img.bedroomWarm, img.dining] },
   { slug: "gachibowli-villa", title: "Luxury villa", location: "Gachibowli", style: "Classic elegance", scope: "Full villa interiors", highlight: "Italian marble, bespoke railings and home automation.", images: [img.archLiving, img.diningDark, img.kitchenIsland, img.livingBright] },
-  { slug: "financial-district-office", title: "Corporate office", location: "Financial District", style: "Contemporary minimalist", scope: "Office interiors", highlight: "Acoustic panelling, ergonomic layout and branding zones.", delivered: "45 days", images: [img.office, img.officeLegacy] },
+  { slug: "financial-district-office", title: "Corporate office", location: "Financial District", style: "Contemporary minimalist", scope: "Office interiors", highlight: "Acoustic panelling, ergonomic layout and branding zones.", images: [img.office, img.officeLegacy] },
   { slug: "jubilee-hills-hotel", title: "Boutique hotel", location: "Jubilee Hills", style: "Urban chic", scope: "Lobby, guest rooms, café", highlight: "Artistic wall textures and space-maximising furniture.", images: [img.bedroomPanel, img.lounge, img.tvWall] },
 ];
 
@@ -75,23 +74,23 @@ export const steps = [
   ["Consultation & discovery", "We start with your needs, style, budget and timeline. We listen before we sketch."],
   ["Concept & design", "Mood boards and 2D/3D visualisations, so you see your space before it is built."],
   ["Material selection", "You choose every finish with us, with full transparency on what goes in."],
-  ["Quotation & approval", "One clear quotation. Once you approve it, that is the final price."],
+  ["Quotation", "A detailed quotation, with every material and cost explained before work begins."],
   ["Execution planning", "A precise schedule for smooth work with minimal disruption to your routine."],
   ["Site supervision", "Our team oversees every day on site, with quality checks and real-time updates."],
   ["Quality assurance", "Rigorous checks at every stage. Excellence is in the details."],
-  ["Final handover", "Your space delivered on the agreed date, after a thorough final inspection."],
+  ["Final handover", "Your space handed over after a thorough final inspection."],
   ["After-support", "We stay with you after handover. The relationship continues beyond delivery."],
 ] as const;
 
 export const promises = [
-  ["Fixed price", "The quotation you approve is the final bill."],
-  ["On time", "Handover on the date we commit to."],
+  ["End-to-end", "Design, materials and execution by one team."],
+  ["Transparent", "Every material and process explained clearly."],
   ["Your finishes", "Every material chosen with you, chip by chip."],
   ["After handover", "Support continues once you've moved in."],
 ] as const;
 
 export const testimonials = [
-  { quote: "Our office needed a transformation that was modern yet efficient. They delivered exactly that, from ergonomic furniture to impactful branding, within the promised 45 days.", who: "Office client, Financial District" },
+  { quote: "Our office needed a transformation that was modern yet efficient. They delivered exactly that, from ergonomic furniture to impactful branding.", who: "Office client, Financial District" },
   { quote: "Every corner of our villa reflects elegance and warmth. The team was attentive, flexible, and treated our project like their own.", who: "Villa owners, Gachibowli" },
   { quote: "The interiors for our hotel received countless compliments from guests. A luxurious ambiance without compromising on function.", who: "Hotelier, Jubilee Hills" },
 ];
@@ -99,3 +98,21 @@ export const testimonials = [
 // Each product category is shown as a material chip on the board.
 const SWATCH: Record<string, string> = { Residential: "sw-marble", Customized: "sw-walnut", Office: "sw-slats", Commercial: "sw-grey-marble", Hospitality: "sw-linen" };
 export const swatchFor = (category: string) => SWATCH[category] ?? "sw-brass";
+
+// About copy from the studio's previous website (pricing and 45-day claims left out at the studio's request).
+export const about = {
+  title: "Crafting spaces that tell your story",
+  intro: [
+    "At Cloud Space Interiors, we believe that great design is not just about aesthetics — it’s about purpose, personality, and presence. With over a decade of design expertise, we specialize in creating luxurious, functional interiors that capture the unique essence of those who live and work within them.",
+    "We’re more than interior designers — we’re storytellers, curators, and collaborators. From private homes to premium commercial spaces, our projects reflect a seamless fusion of style and substance, backed by trust, transparency, and timeless craftsmanship.",
+  ],
+  whyTitle: "Why Cloud Space Interiors?",
+  whyIntro: "Design where every detail matters. Since our inception, we’ve delivered elegant, functional spaces tailored to your vision. Here’s what sets us apart:",
+  why: [
+    ["End-to-end solutions", "From concept to completion, we handle every detail to bring your vision to life seamlessly."],
+    ["Precision execution", "On-site experts ensure flawless alignment between design plans and the finished space."],
+    ["Luxury finishes", "Handcrafted details meet cutting-edge materials for timeless quality."],
+    ["Adaptive innovation", "Flexible designs evolve with your needs, blending creativity and practicality."],
+  ] as const,
+};
+export const aboutImage = img.marbleTv;

@@ -14,7 +14,6 @@ export default function ProductCard({ p }: { p: Product }) {
       <div className="flex flex-1 flex-col gap-2 px-5 pb-5 pt-7">
         <h3 className="font-display text-[1.65rem] leading-tight">{p.name}</h3>
         <p className="flex-1 text-sm leading-relaxed text-ink-soft">{p.description}</p>
-        {p.price && <p className="pt-2 text-sm font-semibold text-baize">{p.price}</p>}
       </div>
     </AddToQuote>
   );

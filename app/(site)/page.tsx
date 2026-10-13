@@ -4,7 +4,7 @@ import HeroQuote from "@/components/HeroQuote";
 import ProjectPin from "@/components/ProjectPin";
 import ProductCard from "@/components/ProductCard";
 import { getProducts } from "@/lib/data";
-import { businessServices, heroImage, homeServices, projects, promises, swatchFor, testimonials } from "@/lib/site";
+import { about, businessServices, heroImage, homeServices, projects, promises, swatchFor, testimonials } from "@/lib/site";
 
 const tray = [
   ["Residential", "Homes"],
@@ -23,19 +23,19 @@ export default async function Home() {
       {/* ── The board ─────────────────────────────────────────── */}
       <section className="mx-auto grid max-w-7xl gap-x-10 gap-y-8 px-4 pb-14 pt-6 sm:px-6 lg:grid-cols-12 lg:grid-rows-[auto_1fr] lg:pt-8">
         <figure className="relative self-start lg:col-span-7 lg:row-start-1 lg:mt-4">
-          <div className="print anim-print relative -rotate-[1.2deg]">
+          <div className="print anim-print relative">
             <span className="pin anim-pin -top-1.5 left-6" aria-hidden />
             <span className="pin anim-pin -top-1.5 right-6" aria-hidden />
             <img src={heroImage.src} alt="A Cloud Space kitchen with a marble island and brass-lit cabinetry" className="aspect-[3/2] w-full object-cover lg:aspect-[16/10]" fetchPriority="high" />
           </div>
-          <figcaption className="tag anim-swing absolute -bottom-6 left-6 rotate-[1.5deg] px-4 pb-1 pt-1.5 font-hand text-lg">{heroImage.caption}</figcaption>
+          <figcaption className="tag anim-swing absolute -bottom-6 left-6 px-4 pb-1 pt-1.5 font-hand text-lg">{heroImage.caption}</figcaption>
         </figure>
 
         <div className="lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1">
-          <div className="tag relative rotate-[0.6deg] px-5 pb-5 pt-6">
+          <div className="tag relative px-5 pb-5 pt-6">
             <span className="pin -top-1.5 left-8" aria-hidden />
             <h1 className="font-display text-[clamp(1.9rem,2.9vw,2.6rem)] leading-[1.05] tracking-[-0.01em]">
-              Premium finishes. One fixed price. A handover date we keep.
+              Designs that speak. Spaces that transform.
             </h1>
             <p className="mt-2.5 max-w-md text-[15px] leading-relaxed text-ink-soft">
               End-to-end interiors for homes and businesses across Hyderabad, designed, built and handed over by one team.
@@ -70,6 +70,19 @@ export default async function Home() {
         </ul>
       </section>
 
+      {/* ── About ─────────────────────────────────────────────── */}
+      <section className="border-y border-ivory/10 bg-baize-deep/60">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-20 sm:px-6 lg:grid-cols-12">
+          <h2 className="font-display text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05] lg:col-span-5">{about.title}</h2>
+          <div className="lg:col-span-6 lg:col-start-7">
+            {about.intro.map((p) => (
+              <p key={p.slice(0, 20)} className="mb-5 max-w-[62ch] text-lg leading-relaxed text-moss">{p}</p>
+            ))}
+            <Link href="/about" className="btn-ghost mt-2">More about us</Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── Work ──────────────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-6">
@@ -78,10 +91,10 @@ export default async function Home() {
         </div>
 
         <div className="mt-14 grid gap-x-10 gap-y-16 lg:grid-cols-12">
-          <ProjectPin p={lead} className="lg:col-span-7" tilt="-rotate-[0.8deg]" large />
+          <ProjectPin p={lead} className="lg:col-span-7" large />
           <div className="grid gap-16 lg:col-span-5 lg:pt-24">
-            {rest.slice(0, 2).map((p, i) => (
-              <ProjectPin key={p.slug} p={p} tilt={i ? "-rotate-[0.6deg]" : "rotate-[0.9deg]"} />
+            {rest.slice(0, 2).map((p) => (
+              <ProjectPin key={p.slug} p={p} />
             ))}
           </div>
         </div>
@@ -103,7 +116,7 @@ export default async function Home() {
             <div className="lg:col-span-4">
               <h2 className="font-display text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.05]">Start with a piece you love</h2>
               <p className="mt-4 max-w-sm text-moss">
-                Add kitchens, wardrobes or a TV wall to your quote. We tailor size, finish and price to your space.
+                Add kitchens, wardrobes or a TV wall to your quote. We tailor size and finish to your space.
               </p>
               <Link href="/products" className="btn-ghost mt-8">Open the full sample tray</Link>
             </div>
@@ -125,7 +138,7 @@ export default async function Home() {
           {testimonials.map((t, i) => (
             <figure
               key={t.who}
-              className={`tag relative p-7 ${["md:col-span-5 -rotate-1", "md:col-span-4 md:mt-16 rotate-[1.2deg]", "md:col-span-3 md:-mt-4 -rotate-[0.5deg]"][i]}`}
+              className={`tag relative p-7 ${["md:col-span-5", "md:col-span-4 md:mt-16", "md:col-span-3 md:-mt-4"][i]}`}
             >
               <span className="pin -top-1.5 left-1/2 -translate-x-1/2" aria-hidden />
               <blockquote className="font-display text-xl leading-snug">&ldquo;{t.quote}&rdquo;</blockquote>
@@ -134,7 +147,7 @@ export default async function Home() {
           ))}
         </div>
         <p className="mt-14 text-moss">
-          Curious how a fixed price works in practice?{" "}
+          Curious what working with us looks like?{" "}
           <Link href="/how-we-work" className="text-brass-hi underline decoration-brass/60 underline-offset-4 hover:decoration-brass-hi">See the nine steps from first call to handover.</Link>
         </p>
       </section>

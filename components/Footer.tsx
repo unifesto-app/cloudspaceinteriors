@@ -38,7 +38,9 @@ export default function Footer() {
         </div>
         <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 border-t border-ivory/10 px-4 py-6 text-xs text-moss sm:px-6">
           <p>© {site.name}</p>
-          <nav className="flex gap-6">
+          <nav className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/about" className="hover:text-brass-hi">About</Link>
+            <Link href="/gallery" className="hover:text-brass-hi">Gallery</Link>
             <Link href="/work" className="hover:text-brass-hi">Work</Link>
             <Link href="/services" className="hover:text-brass-hi">Services</Link>
             <Link href="/products" className="hover:text-brass-hi">Products</Link>

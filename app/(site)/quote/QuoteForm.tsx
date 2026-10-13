@@ -93,7 +93,7 @@ export default function QuoteForm({ services }: { services: string[] }) {
         </label>
         <label className="grid gap-1.5 text-xs font-semibold text-ink-soft sm:col-span-2">
           About your space
-          <textarea name="message" defaultValue={v.message} rows={5} maxLength={2000} placeholder="e.g. 3BHK in Kokapet, possession in March, budget around ₹12 lakh" className="field" />
+          <textarea name="message" defaultValue={v.message} rows={5} maxLength={2000} placeholder="e.g. 3BHK in Kokapet, possession in March" className="field" />
         </label>
         {/* Honeypot — hidden from people, filled by bots */}
         <input name="company" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
